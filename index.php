@@ -52,6 +52,43 @@
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
 
+    <style>
+    
+        .dropbtn {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body class="color-custom style-default layout-full-width nice-scroll-on mobile-tb-left button-flat if-border-hide no-content-padding header-classic minimalist-header-no sticky-header sticky-white ab-show subheader-both-center menu-line-below-80-1 menuo-right menuo-no-borders footer-copy-center">
@@ -102,20 +139,31 @@
                                             <li class="current_page_item">
                                                 <a href="index.php"><span>Home</span></a>
                                             </li>
-                                            <li>
-                                                <a href="content/ngo/about.html"><span>About</span></a>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href="content/ngo/about.html"><span>About</span></a>
+                                                <div class="dropdown-content">
+                                                    <a href="content/ngo/about.html">About Us</a>
+                                                    <a href="content/ngo/people.html">Members</a>
+                                                </div>
                                             </li>
                                             <li>
                                                 <a href="content/ngo/news-and-events.html"><span>Events</span></a>
                                             </li>
-                                            <li>
-                                                <a href="content/ngo/people.html"><span>Membership</span></a>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href="content/ngo/contact.html"><span>Matrimonial</span></a>
+                                                <div class="dropdown-content">
+                                                    <a onclick="yuvak()" href="">Yuvako ki Suchi</a>
+                                                    <a onclick="yuvita()" href="">Yuvita ki Suchi</a>
+                                                </div>
                                             </li>
                                             <li>
                                                 <a href="content/ngo/contact.html"><span>Contact Us</span></a>
                                             </li>
                                             <li>
-                                                <a href="content/ngo/contact.html"><span>Matrimonial</span></a>
+                                                <a href="content/ngo/contact.html"><span>Donate</span></a>
+                                            </li>
+                                            <li>
+                                                <a onclick="membership()" href="content/ngo/forms/membership.JPG" download><span>Be a Member</span></a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
@@ -150,7 +198,7 @@
                                                         <ul>
                                                             <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                                                 <img src="plugins/rs-plugin/admin/assets/images/transparent.png" alt="" title="Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                                <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="right" data-hoffset="" data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 5;"><img src="content/ngo/images/slider/about.png" alt="" width="860" height="488" data-ww="860px" data-hh="488px" data-no-retina> </div>
+                                                                <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="right" data-hoffset="" data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 5;"><img src="content/ngo/images/slider/home.jpg" alt="" width="860" height="488" data-ww="860px" data-hh="488px" data-no-retina> </div>
                                                                 <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="60" data-y="bottom" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6;"><img src="content/ngo/images/bg.png" alt="" width="352" height="327" data-ww="352px" data-hh="327px" data-no-retina> </div>
                                                                 <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important">
                                                                     Paschim Bharat
@@ -178,17 +226,16 @@
                                         </div>
                                         <div class="column mcb-column three-fifth column_column  column-margin-30px">
                                             <div class="column_attr">
-                                                <h2>Welcome!
-													<br>
-													Here is what we are</h2>
+                                                <h2>Welcome!</h2>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+<!--
                                 <div class="wrap mcb-wrap two-fifth  valign-top clearfix" style="padding:0 5% 0 0">
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
-                                            <div class="column_attr" style=" background-color:#00A165; background-image:url(content/ngo/images/bg.png); background-repeat:no-repeat; background-position:left top;   padding:30px 30px 20px;">
+                                            <div class="column_attr" style=" background-color:#00A165; background-image:url(content/ngo/images/bg1.png); background-repeat:no-repeat; background-position:left top;   padding:30px 30px 20px;">
                                                 <h3 style="color: #fff;">Nulla fringilla ipsum in interdum aliquam proin blandit</h3>
                                                 <p style="background: url(content/ngo/images/home_ngo_list.png) no-repeat left 12px; padding-left: 30px; color: #fff;" class="big">
                                                     Integer mollis purus at orci vehicula imperdiet odio vulputate
@@ -203,21 +250,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="wrap mcb-wrap three-fifth  valign-top clearfix">
+-->
+                              
                                     <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column two-third column_column">
+                                        <div class="column mcb-column three-fourth column_column">
                                             <div class="column_attr" style=" padding:0 5% 0 1%;">
-                                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</h5>
+                                                <h5>Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980</h5>
                                                 <p class="big">
-                                                    Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam atem purus at orci vehicula .
+                                                    Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="column mcb-column one-third column_column">
+                                        <div class="column mcb-column one-fourth column_column">
                                             <div class="column_attr">
-                                                <h5 style="font-weight: 400;">Proin non turpis sodales, varius ipsum quam semper.</h5>
+                                                <h5 style="font-weight: 400;">Areas Under Operation</h5>
                                                 <p>
-                                                    Maecenas ante quam, tempus ut turpis a, bibendum vulputate nisi. Nulla non consectetur purus, ut eleifend nulla. Donec quis semper diam, ut cursus ipsum.
+                                                    Karya Kshetras include Western India, that is, Maharashtra, Gujrat, Rajhasthan, Hariyana, Western Uttar Pradesh, Delhi and Madhya Pradesh. 
                                                 </p>
                                             </div>
                                         </div>
@@ -231,10 +279,10 @@
                                         </div>
                                         <div class="column mcb-column two-third column_button">
                                             <div class="button_align align_center">
-                                                <a class="button  button_full_width button_size_1 button_js" href="content/ngo/about.html"><span class="button_label">Read more</span></a> </div>
+                                                <a class="button  button_full_width button_size_1 button_js" href="content/ngo/about.html"><span style="color:#fff; font-weight:600; font-size:16px;" class="button_label">Read more</span></a> </div>
                                         </div>
                                     </div>
-                                </div>
+                             
                             </div>
                         </div>
                         <div class="section mcb-section" style="padding-top:20px; padding-bottom:0px; ">
@@ -260,10 +308,10 @@
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
                                                                     <a href="content/ngo/item4.html">
-                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/home_ngo_blog1-960x750.jpg" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
+                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/1.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/home_ngo_blog1.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/1.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -271,7 +319,7 @@
                                                                     <div class="post-head">
                                                                         <div class="post-meta clearfix">
                                                                             <div class="author-date">
-                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">Muffin Group</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 8, 2014</span></span>
+                                                                                <span class="date"><i class="icon-clock"></i> <span class="post-date updated">2016</span></span>
                                                                             </div>
                                                                             <div class="category">
                                                                                 <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
@@ -289,33 +337,23 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Vestibulum commodo volutpat laoreet</a></h2>
-                                                                    </div>
-                                                                    <div class="post-excerpt">
-                                                                        Quisque justo augue ut urna eu eros. Sed id elit tincidunt et, fermentum vel, wisi.
-                                                                    </div>
-                                                                    <div class="post-footer">
-                                                                        <div class="button-love">
-                                                                            <span class="love-text">Do you like it?</span><a href="#" class="mfn-love " data-id="2277"><span class="icons-wrapper"><i class="icon-heart-empty-fa"></i><i class="icon-heart-fa"></i></span><span class="label">101</span></a>
-                                                                        </div>
-                                                                        <div class="post-links">
-                                                                            <i class="icon-doc-text"></i><a href="content/ngo/item4.html" class="post-more">Read more</a>
-                                                                        </div>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="post-item isotope-item clearfix post-2279 post  format-standard has-post-thumbnail  category-subjects">
+                                                        
+                                                        <div class="post-item isotope-item clearfix post-2277 post  format-standard has-post-thumbnail  category-subjects">
                                                             <div class="date_label">
-                                                                May 7, 2014
+                                                                May 8, 2014
                                                             </div>
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
-                                                                    <a href="content/ngo/item2.html">
-                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/home_ngo_blog2-960x750.jpg" class="scale-with-grid wp-post-image" alt="home_ngo_blog2" itemprop="image" />
+                                                                    <a href="content/ngo/item4.html">
+                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/3.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/home_ngo_blog2.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item2.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/3.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -323,7 +361,7 @@
                                                                     <div class="post-head">
                                                                         <div class="post-meta clearfix">
                                                                             <div class="author-date">
-                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">Muffin Group</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 7, 2014</span></span>
+                                                                                <span class="date"><i class="icon-clock"></i> <span class="post-date updated">2016</span></span>
                                                                             </div>
                                                                             <div class="category">
                                                                                 <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
@@ -341,33 +379,23 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item2.html">Quisque lorem tortor fringilla bulum</a></h2>
-                                                                    </div>
-                                                                    <div class="post-excerpt">
-                                                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per conubia nostra.
-                                                                    </div>
-                                                                    <div class="post-footer">
-                                                                        <div class="button-love">
-                                                                            <span class="love-text">Do you like it?</span><a href="#" class="mfn-love " data-id="2279"><span class="icons-wrapper"><i class="icon-heart-empty-fa"></i><i class="icon-heart-fa"></i></span><span class="label">108</span></a>
-                                                                        </div>
-                                                                        <div class="post-links">
-                                                                            <i class="icon-doc-text"></i><a href="content/ngo/item2.html" class="post-more">Read more</a>
-                                                                        </div>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="post-item isotope-item clearfix post-2281 post  format-standard has-post-thumbnail ">
+                                                        
+                                                        <div class="post-item isotope-item clearfix post-2277 post  format-standard has-post-thumbnail  category-subjects">
                                                             <div class="date_label">
-                                                                May 6, 2014
+                                                                May 8, 2014
                                                             </div>
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
-                                                                    <a href="content/ngo/item6.html">
-                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/home_ngo_blog3-960x750.jpg" class="scale-with-grid wp-post-image" alt="home_ngo_blog3" itemprop="image" />
+                                                                    <a href="content/ngo/item4.html">
+                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/2.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/home_ngo_blog3.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item6.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/3.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -375,7 +403,7 @@
                                                                     <div class="post-head">
                                                                         <div class="post-meta clearfix">
                                                                             <div class="author-date">
-                                                                                <span class="vcard author post-author"><span class="label">Published by </span><i class="icon-user"></i> <span class="fn"><a href="#">Muffin Group</a></span></span><span class="date"><span class="label">at </span><i class="icon-clock"></i> <span class="post-date updated">May 6, 2014</span></span>
+                                                                                <span class="date"><i class="icon-clock"></i> <span class="post-date updated">2016</span></span>
                                                                             </div>
                                                                             <div class="category">
                                                                                 <span class="cat-btn">Categories <i class="icon-down-dir"></i></span>
@@ -384,28 +412,22 @@
                                                                                         <li>
                                                                                             <a href="#" rel="category tag">News</a>
                                                                                         </li>
+                                                                                        <li>
+                                                                                            <a href="#" rel="category tag">Subjects</a>
+                                                                                        </li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item6.html">Vivamus sit amet metus sem imperdiet</a></h2>
-                                                                    </div>
-                                                                    <div class="post-excerpt">
-                                                                        Bibendum tellus, fringilla ut, eleifend pede id nulla.
-                                                                    </div>
-                                                                    <div class="post-footer">
-                                                                        <div class="button-love">
-                                                                            <span class="love-text">Do you like it?</span><a href="#" class="mfn-love " data-id="2281"><span class="icons-wrapper"><i class="icon-heart-empty-fa"></i><i class="icon-heart-fa"></i></span><span class="label">70</span></a>
-                                                                        </div>
-                                                                        <div class="post-links">
-                                                                            <i class="icon-doc-text"></i><a href="content/ngo/item6.html" class="post-more">Read more</a>
-                                                                        </div>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                      
+                                                
                                                     </div>
                                                 </div>
                                             </div>
@@ -419,14 +441,14 @@
                                 <div class="wrap mcb-wrap one  valign-top clearfix">
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column two-third column_column">
-                                            <div class="column_attr align_right" style=" background-image:url(content/ngo/images/bg.png); background-repeat:repeat; background-position:center top;   padding:70px 5% 55px;">
+                                            <div class="column_attr align_right" style=" background-image:url(content/ngo/images/bg1.png); background-repeat:repeat; background-position:center top;   padding:70px 5% 55px;">
                                                 <h2 style="color: #fff">The best way to find yourself is to lose yourself in the service of others</h2>
                                             </div>
                                         </div>
                                         <div class="column mcb-column one-third column_column">
                                             <div class="column_attr">
                                                 <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/ngo/images/home_ngo_pic1.jpg" alt="home_ngo_pic1" width="780" height="758" /> </div>
+                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/ngo/images/members/members.png" alt="home_ngo_pic1" width="780" height="758" /> </div>
                                                 </div>
                                                 <hr class="no_line" style="margin: 0 auto 20px;" />
                                                 <a class="button  button_size_2 button_js" href="content/ngo/people.html" style=" background-color:#ededed !important; color:#444444;"><span class="button_label">View our team</span></a> </div>
@@ -453,13 +475,14 @@
                             <div class="textwidget">
                                 <div class="column one-third">
                                     <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/ngo/images/ngo.png" alt="ngo" width="161" height="141" /> </div>
+                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/logo.png" alt="ngo" width="161" height="141" />
+                                        </div>
                                     </div>
                                     <hr class="no_line" style="margin: 0 auto 20px;" />
                                 </div>
                                 <div class="column two-third">
                                     <p style="margin-left: 5%;">
-                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni dolores eos qui ratione.
+                                        Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980.
                                     </p>
                                 </div>
                             </div>
@@ -469,12 +492,7 @@
                         <aside class="widget widget_text">
                             <h4>Our mission</h4>
                             <div class="textwidget">
-                                <p>
-                                    In ut metus laoreet, faucibus enim et, viverra nisl. Quisque sed bibendum mi. Praesent luctu.
-                                </p>
-                                <p>
-                                    Venen atis aliquet. Quisque maximus justo quis lobortis molestie. Mauris vitae mollis orci. Aenean nibh lacus, tempor vel ipsum ut, ullamcorper pulvinar diam. Morbi sed accumsan quam.
-                                </p>
+                                <p>Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.</p>
                             </div>
                         </aside>
                     </div>
@@ -483,11 +501,8 @@
                             <h4>Contact centre</h4>
                             <div class="textwidget">
                                 <p>
-                                    Aenean accumsan magna in purus placerat congue. Duis aliquam non ante euismod voluptas.
-                                </p>
-                                <p>
-                                    Contact us: +61 (0) 3 8376 6284
-                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                    Contact us: +91 9757432499
+<!--                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>-->
                                 </p>
                                 <p style="font-size: 28px; line-height: 28px;">
                                     <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-gplus-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-twitter-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-pinterest-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-linkedin-circled"></i></a>
@@ -500,8 +515,8 @@
             <div class="footer_copy">
                 <div class="container">
                     <div class="column one">
-                        <div class="copyright">
-                            &copy; 2017 BeNGO - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                        <div class="copyright" style="color: #fff">
+                            &copy; 2018 Paschim Bharat Sanadhya Gaud Sabha
                         </div>
                         <ul class="social"></ul>
                     </div>
@@ -585,6 +600,19 @@
             }
         });
     </script>
+    
+    <script>
+        function membership() {
+            alert("Print out the downloaded form and post it to the address in Contact us   ");
+        }
+        function yuvak() {
+            alert("Press ok to download the full PDF for Yuvak details");
+        }
+        function yuvita() {
+            alert("Press ok to download the full PDF for Yuvita details");
+        }
+    </script>
+
 
 </body>
 

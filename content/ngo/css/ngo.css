@@ -1503,7 +1503,7 @@
 		padding: 10px 70px 10px 70px;
 		text-decoration: none;
 		text-align: left;
-		background-color: rgba(36, 49, 130, 1.00);
+		background-color: #009B67;
 		border-color: transparent;
 		border-style: none;
 		border-width: 0px;
@@ -1512,7 +1512,7 @@
 	.tp-caption.mfnrs_ngo_button:hover, .mfnrs_ngo_button:hover {
 		color: rgba(255, 255, 255, 1.00);
 		text-decoration: none;
-		background-color: rgba(20, 32, 104, 1.00);
+		background-color: #009B67;
 		border-color: transparent;
 		border-style: none;
 		border-width: 0px;

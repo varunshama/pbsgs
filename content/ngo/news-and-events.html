@@ -49,6 +49,43 @@
     <link rel='stylesheet' href='css/ngo.css'>
     <link rel='stylesheet' href='css/custom.css'>
 
+    <style>
+    
+        .dropbtn {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black !important;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body class="color-custom style-default layout-full-width nice-scroll-on mobile-tb-left button-flat if-border-hide no-content-padding header-classic minimalist-header-no sticky-header sticky-white ab-show subheader-both-center menu-line-below-80-1 menuo-right menuo-no-borders footer-copy-center">
@@ -66,6 +103,7 @@
                                     <i class="icon-phone"></i><a href="tel:+919757432499">+91 9757432499</a>
                                 </li>
                             </ul>
+<!--
                             <nav id="social-menu" class="menu-secondary-menu-container">
                                 <ul id="menu-secondary-menu" class="social-menu">
                                     <li>
@@ -79,6 +117,7 @@
                                     </li>
                                 </ul>
                             </nav>
+-->
                         </div>
                     </div>
                 </div>
@@ -100,17 +139,31 @@
                                             <li>
                                                 <a href="../../index.php"><span>Home</span></a>
                                             </li>
-                                            <li>
-                                                <a href="about.html"><span>About</span></a>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href="people.html"><span>About</span></a>
+                                                <div class="dropdown-content">
+                                                    <a href="about.html">About Us</a>
+                                                    <a href="people.html">Members</a>
+                                                </div>
                                             </li>
                                             <li class="current_page_item">
-                                                <a href="news-and-events.html"><span>News and events</span></a>
+                                                <a href="news-and-events.html"><span>Events</span></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href="people.html"><span>Matrimonial</span></a>
+                                                <div class="dropdown-content">
+                                                    <a onclick="yuvak()" href="">Yuvako ki Suchi</a>
+                                                    <a onclick="yuvita()" href="">Yuvita ki Suchi</a>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="people.html"><span>People</span></a>
+                                                <a href="contact.html"><span>Contact Us</span></a>
                                             </li>
                                             <li>
-                                                <a href="contact.html"><span>Contact</span></a>
+                                                <a href="donate.html"><span>Donate</span></a>
+                                            </li>
+                                            <li>
+                                                <a onclick="membership()" href="forms/membership.JPG" download><span>Be a member</span></a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
@@ -471,14 +524,14 @@
                             <div class="textwidget">
                                 <div class="column one-third">
                                     <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/ngo.png" alt="ngo" width="161" height="141" />
+                                        <div class="image_wrapper"><img class="scale-with-grid" src="images/logo.png" alt="ngo" width="161" height="141" />
                                         </div>
                                     </div>
                                     <hr class="no_line" style="margin: 0 auto 20px;" />
                                 </div>
                                 <div class="column two-third">
                                     <p style="margin-left: 5%;">
-                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni dolores eos qui ratione.
+                                        Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980.
                                     </p>
                                 </div>
                             </div>
@@ -488,12 +541,7 @@
                         <aside class="widget widget_text">
                             <h4>Our mission</h4>
                             <div class="textwidget">
-                                <p>
-                                    In ut metus laoreet, faucibus enim et, viverra nisl. Quisque sed bibendum mi. Praesent luctu.
-                                </p>
-                                <p>
-                                    Venen atis aliquet. Quisque maximus justo quis lobortis molestie. Mauris vitae mollis orci. Aenean nibh lacus, tempor vel ipsum ut, ullamcorper pulvinar diam. Morbi sed accumsan quam.
-                                </p>
+                                <p>Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.</p>
                             </div>
                         </aside>
                     </div>
@@ -502,11 +550,8 @@
                             <h4>Contact centre</h4>
                             <div class="textwidget">
                                 <p>
-                                    Aenean accumsan magna in purus placerat congue. Duis aliquam non ante euismod voluptas.
-                                </p>
-                                <p>
-                                    Contact us: +61 (0) 3 8376 6284
-                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                    Contact us: +91 9757432499
+<!--                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>-->
                                 </p>
                                 <p style="font-size: 28px; line-height: 28px;">
                                     <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-gplus-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-twitter-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-pinterest-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-linkedin-circled"></i></a>
@@ -519,14 +564,14 @@
             <div class="footer_copy">
                 <div class="container">
                     <div class="column one">
-                        <div class="copyright">
-                            &copy; 2017 BeNGO - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow" href="http://bit.ly/1M6lijQ">BeantownThemes</a>
+                        <div class="copyright" style="color: #fff">
+                            &copy; 2018 Paschim Bharat Sanadhya Gaud Sabha
                         </div>
                         <ul class="social"></ul>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer
     </div>
 
     <!-- JS -->
@@ -545,19 +590,30 @@
                 var retinaEl = jQuery("#logo img.logo-main");
                 var retinaLogoW = retinaEl.width();
                 var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "images/retina-ngo.png").width(retinaLogoW).height(retinaLogoH);
+                retinaEl.attr("src", "images/retina-logo.png").width(retinaLogoW).height(retinaLogoH);
                 var stickyEl = jQuery("#logo img.logo-sticky");
                 var stickyLogoW = stickyEl.width();
                 var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "images/retina-ngo.png").width(stickyLogoW).height(stickyLogoH);
+                stickyEl.attr("src", "images/retina-logo.png").width(stickyLogoW).height(stickyLogoH);
                 var mobileEl = jQuery("#logo img.logo-mobile");
                 var mobileLogoW = mobileEl.width();
                 var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "images/retina-ngo.png").width(mobileLogoW).height(mobileLogoH);
+                mobileEl.attr("src", "images/retina-logo.png").width(mobileLogoW).height(mobileLogoH);
             }
         });
     </script>
 
+    <script>
+        function membership() {
+            alert("Print out the downloaded form and post it to the address in Contact us   ");
+        }
+        function yuvak() {
+            alert("Press ok to download the full PDF for Yuvak details");
+        }
+        function yuvita() {
+            alert("Press ok to download the full PDF for Yuvita details");
+        }
+    </script>
 </body>
 
 </html>

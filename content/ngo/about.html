@@ -49,6 +49,43 @@
     <link rel='stylesheet' href='css/ngo.css'>
     <link rel='stylesheet' href='css/custom.css'>
 
+    <style>
+    
+        .dropbtn {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black !important;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
 </head>
 
 <body class="color-custom style-default layout-full-width nice-scroll-on mobile-tb-left button-flat if-border-hide no-content-padding header-classic minimalist-header-no sticky-header sticky-white ab-show subheader-both-center menu-line-below-80-1 menuo-right menuo-no-borders footer-copy-center">
@@ -100,20 +137,31 @@
                                             <li>
                                                 <a href="../../index.php"><span>Home</span></a>
                                             </li>
-                                            <li class="current_page_item">
-                                                <a href="about.html"><span>About</span></a>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href="about.html"><span>About</span></a>
+                                                <div class="dropdown-content">
+                                                    <a href="about.html">About Us</a>
+                                                    <a href="people.html">Members</a>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="news-and-events.html"><span>News and events</span></a>
+                                                <a href="news-and-events.html"><span>Events</span></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropbtn" href=""><span>Matrimonial</span></a>
+                                                <div class="dropdown-content">
+                                                    <a onclick="yuvak()" href="">Yuvako ki Suchi</a>
+                                                    <a onclick="yuvita()" href="">Yuvita ki Suchi</a>
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="people.html"><span>People</span></a>
+                                                <a href="contact.html"><span>Contact Us</span></a>
                                             </li>
                                             <li>
-                                                <a href="contact.html"><span>Contact</span></a>
+                                                <a href="donate.html"><span>Donate</span></a>
                                             </li>
                                             <li>
-                                                <a href="people.html"><span>Become a member?</span></a>
+                                                <a onclick="membership()" href="forms/membership.JPG" download><span>Be a member</span></a>
                                             </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
@@ -137,151 +185,30 @@
             <div class="content_wrapper clearfix">
                 <div class="sections_group">
                     <div class="entry-content">
-                        <div class="section mcb-section" style="padding-top:0px; padding-bottom:0px; ">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one  valign-top clearfix" style="padding:150px 8% 100px; background-image:url(images/home_ngo_about1.jpg); background-repeat:no-repeat; background-position:center;   ">
+                       <div class="container">
+                           <div class="jumbotron">
+                            <img src="images/slider/about2.png" class="img-responsive">
+                           </div>
+                           <br>
+                           <br>
                                     <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column  column-margin-20px">
-                                            <div class="column_attr align_center">
-                                                <h2 style="color: #fff;">Phasellus viverra purus
-													<br>
-													aliquet Fusce dignissim feugiat</h2>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one column_button">
-                                            <div class="button_align align_center">
-                                                <a class="button  button_js" href="contact.html"><span class="button_label">Join us today</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section" style="padding-top:60px; padding-bottom:0px; ">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one  valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column four-fifth column_column">
-                                            <div class="column_attr">
-                                                <h2>Aenean blandit justo eget commodo elementum. Nam pharetra molestie dignissim. Maecenas libero.</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-second  valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_story_box ">
-                                            <div class="story_box ">
-                                                <div class="photo_wrapper"><img class="scale-with-grid" src="images/home_ngo_about2.jpg" alt="home_ngo_about2" width="900" height="680" />
-                                                </div>
-                                                <div class="desc_wrapper">
-                                                    <h3 class="themecolor">Aliquam sem elit cras amet etiam elit tempor amet metus</h3>
-                                                    <hr class="hr_color">
-                                                    <div class="desc">
-                                                        Integer ut mattis ante. Integer suscipit mattis egestas. Etiam sagittis nunc a metus pulvinar blandit. Proin ac imperdiet diam.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-second  valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr">
-                                                <h5>Morbi pretium ex nec justo malesuada dignissim. Ut ac lacus ac nisi suscipit porta nec at quam. Fusce ac nulla ornare, interdum erat a, dignissim tortor nullam.</h5>
+                                        <div class="column mcb-column three-fourth column_column">
+                                            <div class="column_attr" style=" padding:0 5% 0 1%;">
+                                                <h5>Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980</h5>
                                                 <p class="big">
-                                                    Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse consectetur, adipisci velit, sed quia non e magnam aliquam atem.
+                                                    Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="column mcb-column one-second column_chart ">
-                                            <div class="chart_box">
-                                                <div class="chart" data-percent="42" data-color="#243182">
-                                                    <div class="num">
-                                                        42%
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    <big>Aenean metus</big>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-second column_column">
+                                        <div class="column mcb-column one-fourth column_column">
                                             <div class="column_attr">
-                                                <h5 style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus.</h5>
+                                                <h5 style="font-weight: 400;">Areas Under Operation</h5>
                                                 <p>
-                                                    Et malesuada fames ac turpis egestas. Fusce sollicitudin dolor nec mi accumsan, eget cursus quam nullam. Proin ac imperdiet diam. Faucibus enim et, viverra nisl. Quisque sed bibendum mi. Praesent luctu.
+                                                    Karya Kshetras include Western India, that is, Maharashtra, Gujrat, Rajhasthan, Hariyana, Western Uttar Pradesh, Delhi and Madhya Pradesh. 
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section" style="padding-top:20px; padding-bottom:40px; ">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one  valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_divider ">
-                                            <hr style="margin: 0 auto 60px;" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 2% 0 0">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr">
-                                                <h3>Pellentesque pretium venenatis magna vitae finibus. Praesent id ipsum ornare, rutrum.</h3>
-                                                <h5 style="font-weight: 400;">Morbi mattis, tortor dapibus accumsan efficitur, neque est auctor dolor, ut placerat quam enim et quam. Aenean ac consectetur eros. Sed hendrerit augue eu amet.</h5>
-                                                <p class="big">
-                                                    Maecenas sodales id turpis nec malesuada. Mauris ligula tortor, scelerisque ac erat a, eleifend feugiat dui. Donec laoreet, sem et vulputate consectetur nullam. Cras vitae feugiat nulla, vel mattis enim. Nunc congue urna vitae vulputate lobortis.
-                                                </p>
-                                                <p>
-                                                    Donec tincidunt risus vitae ligula euismod facilisis. Suspendisse et enim eu lacus tincidunt pulvinar ornare ac lacus. Nulla in consectetur diam, ut massa nunc. Mauris vitae mollis orci.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 0 0 2%">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column two-fifth column_image ">
-                                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/home_ngo_about3.jpg" alt="home_ngo_about3" width="780" height="730" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column three-fifth column_column">
-                                            <div class="column_attr" style=" padding:15px 0 0 6%;">
-                                                <h5 style="font-weight: 400;">Fusce mauris</h5>
-                                                <p>
-                                                    Etiam ante nibh, condimentum nec risus vitae, tempor cursus ante.
-                                                </p>
-                                                <a class="button  button_size_2 button_js" href="#"><span class="button_label">Read more</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one column_divider ">
-                                            <hr class="no_line" />
-                                        </div>
-                                        <div class="column mcb-column two-fifth column_image ">
-                                            <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-                                                <div class="image_wrapper"><img class="scale-with-grid" src="images/home_ngo_about4.jpg" alt="home_ngo_about4" width="780" height="730" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column three-fifth column_column">
-                                            <div class="column_attr" style=" padding:15px 0 0 6%;">
-                                                <h5 style="font-weight: 400;">Neque metus</h5>
-                                                <p>
-                                                    Condimentum sit amet sem vitae, gravida tristique nibh. Donec in.
-                                                </p>
-                                                <a class="button  button_size_2 button_js" href="#"><span class="button_label">Read more</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="section the_content no_content">
                             <div class="section_wrapper">
@@ -308,7 +235,7 @@
                                 </div>
                                 <div class="column two-third">
                                     <p style="margin-left: 5%;">
-                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia magni dolores eos qui ratione.
+                                        Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980.
                                     </p>
                                 </div>
                             </div>
@@ -318,12 +245,7 @@
                         <aside class="widget widget_text">
                             <h4>Our mission</h4>
                             <div class="textwidget">
-                                <p>
-                                    In ut metus laoreet, faucibus enim et, viverra nisl. Quisque sed bibendum mi. Praesent luctu.
-                                </p>
-                                <p>
-                                    Venen atis aliquet. Quisque maximus justo quis lobortis molestie. Mauris vitae mollis orci. Aenean nibh lacus, tempor vel ipsum ut, ullamcorper pulvinar diam. Morbi sed accumsan quam.
-                                </p>
+                                <p>Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.</p>
                             </div>
                         </aside>
                     </div>
@@ -332,11 +254,8 @@
                             <h4>Contact centre</h4>
                             <div class="textwidget">
                                 <p>
-                                    Aenean accumsan magna in purus placerat congue. Duis aliquam non ante euismod voluptas.
-                                </p>
-                                <p>
                                     Contact us: +91 9757432499
-                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+<!--                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>-->
                                 </p>
                                 <p style="font-size: 28px; line-height: 28px;">
                                     <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-gplus-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-twitter-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-pinterest-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-linkedin-circled"></i></a>
@@ -349,14 +268,14 @@
             <div class="footer_copy">
                 <div class="container">
                     <div class="column one">
-                        <div class="copyright">
-                            &copy; 2018 by <a target="_blank" rel="nofollow" href="">Varun Sharma</a>
+                        <div class="copyright" style="color: #fff">
+                            &copy; 2018 Paschim Bharat Sanadhya Gaud Sabha
                         </div>
                         <ul class="social"></ul>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer
     </div>
 
     <!-- JS -->
@@ -375,17 +294,29 @@
                 var retinaEl = jQuery("#logo img.logo-main");
                 var retinaLogoW = retinaEl.width();
                 var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "images/retina-ngo.png").width(retinaLogoW).height(retinaLogoH);
+                retinaEl.attr("src", "images/retina-logo.png").width(retinaLogoW).height(retinaLogoH);
                 var stickyEl = jQuery("#logo img.logo-sticky");
                 var stickyLogoW = stickyEl.width();
                 var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "images/retina-ngo.png").width(stickyLogoW).height(stickyLogoH);
+                stickyEl.attr("src", "images/retina-logo.png").width(stickyLogoW).height(stickyLogoH);
                 var mobileEl = jQuery("#logo img.logo-mobile");
                 var mobileLogoW = mobileEl.width();
                 var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "images/retina-ngo.png").width(mobileLogoW).height(mobileLogoH);
+                mobileEl.attr("src", "images/retina-logo.png").width(mobileLogoW).height(mobileLogoH);
             }
         });
+    </script>
+    
+    <script>
+        function membership() {
+            alert("Print out the downloaded form and post it to the address in Contact us   ");
+        }
+        function yuvak() {
+            alert("Press ok to download the full PDF for Yuvak details");
+        }
+        function yuvita() {
+            alert("Press ok to download the full PDF for Yuvita details");
+        }
     </script>
 
 </body>
