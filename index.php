@@ -143,7 +143,8 @@
                                                 <a class="dropbtn" href="content/ngo/about.html"><span>About</span></a>
                                                 <div class="dropdown-content">
                                                     <a href="content/ngo/about.html">About Us</a>
-                                                    <a href="content/ngo/people.html">Members</a>
+                                                    <a href="content/ngo/people.html">Team</a>
+                                                    <a href="content/ngo/members.html">Members</a>
                                                 </div>
                                             </li>
                                             <li>
@@ -152,8 +153,8 @@
                                             <li class="dropdown">
                                                 <a class="dropbtn" href="content/ngo/contact.html"><span>Matrimonial</span></a>
                                                 <div class="dropdown-content">
-                                                    <a onclick="yuvak()" href="">Yuvako ki Suchi</a>
-                                                    <a onclick="yuvita()" href="">Yuvita ki Suchi</a>
+                                                    <a onclick="yuvak()" href="content/ngo/download/boys.pdf" target="_blank">Yuvako ki Suchi</a>
+                                                    <a onclick="yuvita()" href="content/ngo/download/girls.pdf" target="_blank">Yuvita ki Suchi</a>
                                                 </div>
                                             </li>
                                             <li>
@@ -200,10 +201,12 @@
                                                                 <img src="plugins/rs-plugin/admin/assets/images/transparent.png" alt="" title="Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                                                 <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="right" data-hoffset="" data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 5;"><img src="content/ngo/images/slider/home.jpg" alt="" width="860" height="488" data-ww="860px" data-hh="488px" data-no-retina> </div>
                                                                 <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="60" data-y="bottom" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6;"><img src="content/ngo/images/bg.png" alt="" width="352" height="327" data-ww="352px" data-hh="327px" data-no-retina> </div>
-                                                                <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important">
-                                                                    Paschim Bharat
-                                                                    <br> Sanadhya Gaud
-                                                                    <br> Sabha </div>
+                                                                <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important; position:relative; right: 30px; ">
+                                                                    Varshik Samelan<br>
+                                                                    3pm, 25th Feb<br>
+                                                                    Supreme IT Park 
+                                                                    <br>Hiranandani Complex
+                                                                </div>
 <!--                                                                <a class="tp-caption mfnrs_ngo_button   tp-resizeme" href="content/ngo/contact.html" target="_self" id="slide-1-layer-4" data-x="412" data-y="bottom" data-voffset="58" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0,161,101,1.00);br:0px 0px 0px 0px;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1400" data-splitin="none" data-splitout="none" data-actions='' data-responsive_offset="on" style="z-index: 8; white-space: nowrap;">Join us today </a> </li>-->
                                                         </ul>
                                                         <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -502,7 +505,7 @@
                             <div class="textwidget">
                                 <p>
                                     Contact us: +91 9757432499
-<!--                                    <br> Write us: <a href="mailto:noreply@envato.com">noreply@envato.com</a>-->
+                                    <br> Write us: <a href="mailto:paschimbharatsanadhyagudsabha@gmail.com">paschimbharatsanadhyagudsabha@gmail.com</a>
                                 </p>
                                 <p style="font-size: 28px; line-height: 28px;">
                                     <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-gplus-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-twitter-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-pinterest-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-linkedin-circled"></i></a>
