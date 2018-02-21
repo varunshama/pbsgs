@@ -17,6 +17,13 @@
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="content/ngo/images/favicon/apple-icon-57x57.png">
@@ -100,27 +107,25 @@
                         <div class="column one">
                             <ul class="contact_details">
                                 <li class="slogan">
-                                    Have any questions?
+                                    Contact Us
                                 </li>
                                 <li class="phone">
                                     <i class="icon-phone"></i><a href="tel:+919757432499">+919757432499</a>
                                 </li>
+                                <li class="phone" style="color:#fff">
+                                    Shiv Prakash Sharma
+                                </li>
                             </ul>
-<!--
+
                             <nav id="social-menu" class="menu-secondary-menu-container">
                                 <ul id="menu-secondary-menu" class="social-menu">
                                     <li>
-                                        <a href="#">Suspendisse metus</a>
+                                        <a style="font-weight: 700; text-transform: uppercase; font-size: 16px;" onclick="membership()" href="content/ngo/forms/membership.pdf" download>Become Member</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Etiam ultrices</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Nulla turpis</a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
--->
+
                         </div>
                     </div>
                 </div>
@@ -163,9 +168,6 @@
                                             <li>
                                                 <a href="content/ngo/contact.html"><span>Donate</span></a>
                                             </li>
-                                            <li>
-                                                <a onclick="membership()" href="content/ngo/forms/membership.JPG" download><span>Be a Member</span></a>
-                                            </li>
                                         </ul>
                                     </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
                                 </div>
@@ -199,14 +201,53 @@
                                                         <ul>
                                                             <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                                                 <img src="plugins/rs-plugin/admin/assets/images/transparent.png" alt="" title="Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                                <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="right" data-hoffset="" data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 5;"><img src="content/ngo/images/slider/home.jpg" alt="" width="860" height="488" data-ww="860px" data-hh="488px" data-no-retina> </div>
+<!--                                                                <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="right" data-hoffset="" data-y="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 5;"><img src="content/ngo/images/slider/home.jpg" alt="" width="860" height="488" data-ww="860px" data-hh="488px" data-no-retina> </div>-->
+                                                 <div class="container">  
+                                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                          <div class="item active">
+                                            <img src="content/ngo/images/slider/home.jpg" alt="Los Angeles" style="width:100%;">
+                                          </div>
+
+                                          <div class="item">
+                                            <img src="content/ngo/images/slider/website.png" alt="Chicago" style="width:100%;">
+                                          </div>
+                                            
+                                            <div class="item">
+                                            <img src="content/ngo/images/slider/about.png" alt="New york" style="width:100%;">
+                                          </div>
+                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                          <span class="glyphicon glyphicon-chevron-left"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                          <span class="glyphicon glyphicon-chevron-right"></span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </div>
+                                    </div>               
                                                                 <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="60" data-y="bottom" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6;"><img src="content/ngo/images/bg.png" alt="" width="352" height="327" data-ww="352px" data-hh="327px" data-no-retina> </div>
-                                                                <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important; position:relative; right: 30px; ">
-                                                                    Varshik Samelan<br>
-                                                                    3pm, 25th Feb<br>
-                                                                    Supreme IT Park 
+                                                                <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important; position:relative; right: 30px; text-align:left ">
+                                                                    Invitation for<br><br>
+                                                                    Varshik Samelan 2018<br>
+                                                                    3pm onwards,<br> 25th Feb,<br>
+                                                                    behind Supreme<br> IT Park, 
                                                                     <br>Hiranandani Complex
                                                                 </div>
+                                                            </li>
+                                                            
+                                                            
 <!--                                                                <a class="tp-caption mfnrs_ngo_button   tp-resizeme" href="content/ngo/contact.html" target="_self" id="slide-1-layer-4" data-x="412" data-y="bottom" data-voffset="58" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0,161,101,1.00);br:0px 0px 0px 0px;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1400" data-splitin="none" data-splitout="none" data-actions='' data-responsive_offset="on" style="z-index: 8; white-space: nowrap;">Join us today </a> </li>-->
                                                         </ul>
                                                         <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -229,7 +270,7 @@
                                         </div>
                                         <div class="column mcb-column three-fifth column_column  column-margin-30px">
                                             <div class="column_attr">
-                                                <h2>Welcome!</h2>
+                                                <h2>About Us</h2>
                                             </div>
                                         </div>
                                     </div>
@@ -256,31 +297,17 @@
 -->
                               
                                     <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column three-fourth column_column">
+                                        <div class="row">
                                             <div class="column_attr" style=" padding:0 5% 0 1%;">
                                                 <h5>Paschim Bharat Sanadhya Gaud Sabha was founded in March 1980</h5>
                                                 <p class="big">
-                                                    Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.
+                                                    <i class="icon-record"></i>Our goal is to bring all the Gaud and Sanadhya Brahmins staying in various places in the
+                                                    Country together, under one Umbrella. The goal will be to meet at one platform, know each other
+                                                    and help each other in all the possible ways.
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="column mcb-column one-fourth column_column">
-                                            <div class="column_attr">
-                                                <h5 style="font-weight: 400;">Areas Under Operation</h5>
-                                                <p>
-                                                    Karya Kshetras include Western India, that is, Maharashtra, Gujrat, Rajhasthan, Hariyana, Western Uttar Pradesh, Delhi and Madhya Pradesh. 
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one column_divider ">
-                                            <hr class="no_line" />
-                                        </div>
-                                        <div class="column mcb-column one-third column_placeholder">
-                                            <div class="placeholder">
-                                                &nbsp;
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column two-third column_button">
+                                        <div class="row">
                                             <div class="button_align align_center">
                                                 <a class="button  button_full_width button_size_1 button_js" href="content/ngo/about.html"><span style="color:#fff; font-weight:600; font-size:16px;" class="button_label">Read more</span></a> </div>
                                         </div>
@@ -310,11 +337,11 @@
                                                             </div>
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
-                                                                    <a href="content/ngo/item4.html">
-                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/1.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
+                                                                    <a href="content/ngo/news-and-events.html">
+                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/2018.jpeg" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" style="height:260px;" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/events/1.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/2018.jpeg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/news-and-events.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -340,7 +367,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/news-and-events.html">Invitation Varshik Sammelan 2018</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -352,11 +379,11 @@
                                                             </div>
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
-                                                                    <a href="content/ngo/item4.html">
-                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/3.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
+                                                                    <a href="content/ngo/news-and-events.html">
+                                                                        <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/website.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/events/3.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/website.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/news-and-events.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -382,7 +409,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/news-and-events.html">Website Launch 2018</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -394,11 +421,11 @@
                                                             </div>
                                                             <div class="image_frame post-photo-wrapper scale-with-grid image">
                                                                 <div class="image_wrapper">
-                                                                    <a href="content/ngo/item4.html">
+                                                                    <a href="content/ngo/news-and-events.html">
                                                                         <div class="mask"></div><img width="960" height="750" src="content/ngo/images/events/2.png" class="scale-with-grid wp-post-image" alt="home_ngo_blog1" itemprop="image" />
                                                                     </a>
                                                                     <div class="image_links double">
-                                                                        <a href="content/ngo/images/events/3.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/item4.html" class="link"><i class="icon-link"></i></a> </div>
+                                                                        <a href="content/ngo/images/events/3.png" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a href="content/ngo/news-and-events.html" class="link"><i class="icon-link"></i></a> </div>
                                                                 </div>
                                                             </div>
                                                             <div class="post-desc-wrapper">
@@ -424,7 +451,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="post-title">
-                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/item4.html">Varshik Sammelan 2016</a></h2>
+                                                                        <h2 class="entry-title" itemprop="headline"><a href="content/ngo/news-and-events.html">Varshik Sammelan 2016</a></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -443,19 +470,46 @@
                             <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap one  valign-top clearfix">
                                     <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column two-third column_column">
-                                            <div class="column_attr align_right" style=" background-image:url(content/ngo/images/bg1.png); background-repeat:repeat; background-position:center top;   padding:70px 5% 55px;">
-                                                <h2 style="color: #fff">The best way to find yourself is to lose yourself in the service of others</h2>
-                                            </div>
+                                        <a href="content/ngo/people.html"><h3 style="text-align:center; font-weight:700; font-size: 42px">Our Team</h3></a>
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:400px;">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                          <div class="item active">
+                                            <img src="content/ngo/images/members/allmembers.png" alt="Los Angeles" style="width:100%; height: 400px">
+                                          </div>
+
+<!--
+                                          <div class="item">
+                                            <img src="content/ngo/images/members/2.png" alt="Chicago" style="width:100%; height: 400px">
+                                          </div>
+
+                                          <div class="item">
+                                            <img src="content/ngo/images/members/3.png" alt="New york" style="width:100%; height: 400px">
+                                          </div>
+
+                                          <div class="item">
+                                            <img src="content/ngo/images/members/4.png" alt="New york" style="width:100%; height: 400px">
+                                          </div>
+-->
                                         </div>
-                                        <div class="column mcb-column one-third column_column">
-                                            <div class="column_attr">
-                                                <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
-                                                    <div class="image_wrapper"><img class="scale-with-grid" src="content/ngo/images/members/members.png" alt="home_ngo_pic1" width="780" height="758" /> </div>
-                                                </div>
-                                                <hr class="no_line" style="margin: 0 auto 20px;" />
-                                                <a class="button  button_size_2 button_js" href="content/ngo/people.html" style=" background-color:#ededed !important; color:#444444;"><span class="button_label">View our team</span></a> </div>
-                                        </div>
+
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                          <span class="glyphicon glyphicon-chevron-left"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                          <span class="glyphicon glyphicon-chevron-right"></span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -495,7 +549,9 @@
                         <aside class="widget widget_text">
                             <h4>Our mission</h4>
                             <div class="textwidget">
-                                <p>Our goal is to unite all the Gaud in Families living in Mumbai as well as in India as a whole, to eradicate evil practices of the society like dowry, to develop the society and educate people about our culture, to encourage our youth, and to help everyone affected by natural disasters and poverty.</p>
+                                <p>Our goal is to bring all the Gaud and Sanadhya Brahmins staying in various places in the
+                                                    Country together, under one Umbrella. The goal will be to meet at one platform, know each other
+                                                    and help each other in all the possible ways.</p>
                             </div>
                         </aside>
                     </div>
@@ -505,10 +561,11 @@
                             <div class="textwidget">
                                 <p>
                                     Contact us: +91 9757432499
-                                    <br> Write us: <a href="mailto:paschimbharatsanadhyagudsabha@gmail.com">paschimbharatsanadhyagudsabha@gmail.com</a>
+                                    <br>  Write us: <br> Shiv Prakash Sharma<br><a href="mailto:paschimbharatsanadhyagaudsabha@gmail.com">paschimbharatsanadhyagudsabha@gmail.com</a><br>
+                                    <a href="mailto:brijwasimisthan@gmail.com">brijwasimisthan@gmail.com</a>
                                 </p>
                                 <p style="font-size: 28px; line-height: 28px;">
-                                    <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-gplus-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-twitter-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-pinterest-circled"></i></a><a href="#" style="color: #cacaca;"><i class="icon-linkedin-circled"></i></a>
+                                    <a href="#" style="color: #cacaca;"><i class="icon-facebook-circled"></i></a>
                                 </p>
                             </div>
                         </aside>
@@ -519,7 +576,7 @@
                 <div class="container">
                     <div class="column one">
                         <div class="copyright" style="color: #fff">
-                            &copy; 2018 Paschim Bharat Sanadhya Gaud Sabha
+                            &copy; 2018 Paschim Bharat Sanadhya Gaud Sabha. Designed by &nbsp;&nbsp; <a href="" style="font-size:16px;">Varun Sharma</a>
                         </div>
                         <ul class="social"></ul>
                     </div>
