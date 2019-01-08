@@ -107,7 +107,7 @@
                         <div class="column one">
                             <ul class="contact_details">
                                 <li class="slogan">
-                                    Fuck you Us
+                                    Contact Us
                                 </li>
                                 <li class="phone">
                                     <i class="icon-phone"></i><a href="tel:+919757432499">+919757432499</a>
