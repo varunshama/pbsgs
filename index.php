@@ -113,7 +113,7 @@
                                     <i class="icon-phone"></i><a href="tel:+919757432499">+919757432499</a>
                                 </li>
                                 <li class="phone" style="color:#fff">
-                                    Shiv Prakash Sharma
+                                    Shri Prakash Sharma
                                 </li>
                             </ul>
 
