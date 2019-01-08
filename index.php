@@ -243,8 +243,10 @@
                                     </div>               
                                                                 <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="60" data-y="bottom" data-voffset="" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="700" data-responsive_offset="on" style="z-index: 6;"><img src="content/ngo/images/bg.png" alt="" width="352" height="327" data-ww="352px" data-hh="327px" data-no-retina> </div>
                                                                 <div class="tp-caption mfnrs_ngo_medium_dark   tp-resizeme" id="slide-1-layer-3" data-x="110" data-y="bottom" data-voffset="30" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="1100" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; color: #fff !important; position:relative; right: 30px; text-align:left ">
-                                                                    41st varshik sneha samelan<br>
-                                                                    Sunday 20th january 2019<br>
+                                                                    41st varshik<br>
+                                                                    sneha samelan<br>
+                                                                    Sunday 20th<br> 
+                                                                    january 2019<br>
                                                                     Thathai bhatia hall,<br>
                                                                     Kandivali West<br>
                                                                 </div>
