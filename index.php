@@ -8,7 +8,6 @@
 <!--<![endif]-->
 
 <head>
-
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <title>Paschim Bharat Sanadhya Gaud Sabha</title>
